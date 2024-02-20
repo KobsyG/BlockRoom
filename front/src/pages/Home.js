@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
-import Principes from '../components/Principes'
-import Services from '../components/Services'
+import Tarif from '../components/Tarif'
+import Production from '../components/Production'
 import Video from '../components/Video'
 import { Element, scroller } from 'react-scroll';
+import Navbar from '../components/Navbar';
+import About from './About';
+import BlockRoom from '../components/BlockRoom';
 
 const Home = () => {
 
@@ -17,8 +20,8 @@ const Home = () => {
   return (
     <>
       <Video />
-      <Services />
-      <Principes />
+      <BlockRoom />
+      <Production />
     </>
   )
 }

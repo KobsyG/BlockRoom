@@ -1,10 +1,11 @@
 import React from 'react'
 
 import transparence from '../medias/transparence.png'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className='w-full relative flex flex-col pt-44'>
+    <div className='w-full relative flex flex-col pt-48'>
       <div className='about w-full flex items-center justify-center mt-16'>
         <div className='w-[600px] mr-20'>
           <h1 className='text-[30px] text-center mb-10'>A propos de nous</h1>
@@ -26,7 +27,7 @@ const About = () => {
           <img className='object-contain h-full' src={transparence} />
         </div>
       </div>
-      <button className='h-[50px] w-[200px] mx-auto border-2 mt-20 hover:scale-105 transition-transform duration-200 bg-[#d9d9d9]'>NOUS CONTACTER</button>
+      <button className='h-[50px] w-[200px] mx-auto border-2 mt-20 hover:bg-[#FFFFFF] hover:scale-105 transition-transform duration-200 bg-[#d9d9d9]'><Link to={"/contact"}>NOUS CONTACTER</Link></button>
     </div>
   )
 }

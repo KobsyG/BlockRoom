@@ -3,6 +3,7 @@ import React from 'react'
 import soutenez from '../medias/soutenez.png'
 import Facebook from '../medias/facebook.png'
 import Instagram from '../medias/instagram.png'
+import Logo from '../medias/Logo.png'
 
 const Footer = () => {
   return (
@@ -12,7 +13,10 @@ const Footer = () => {
         <div className='absolute w-full h-full z-20'>
           <img className='object-contain w-full' src={require('../medias/papier-arrache-footer.png')} />
         </div>
-        <h1 className='relative mt-20 mb-5 z-30'>BlockRoomVideo</h1>
+        <div className='flex h-[50px] mt-20'>
+          <img className='h-full object-contain z-30' src={Logo} />
+          <h1 className='relative mb-5 z-30'>BlockRoomVideo</h1>
+        </div>
         <div className='relative logo-container flex mb-5 items-center z-30'>
           <img className='h-[40px] mr-2' src={Facebook} />
           <img className='h-[35px]' src={Instagram} />
